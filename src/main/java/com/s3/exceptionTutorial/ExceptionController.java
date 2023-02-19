@@ -25,6 +25,8 @@ public class ExceptionController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,"KthException3");
         } else if (exceptionId==4){
             exceptionService.throwException4();
+        } else if (exceptionId==5){
+            exceptionService.throwException5();
         }
         return new ResponseEntity<>(HttpStatus.OK);
     }
